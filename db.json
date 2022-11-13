@@ -13,16 +13,16 @@
       "stock": 20
     },
     {
-      "id": 4,
-      "name": "GEForce RTX 3090",
-      "price": "1500",
-      "stock": "2"
+      "id": 3,
+      "name": "GEForce RTX 3080",
+      "price": 700,
+      "stock": 30
     },
     {
-      "name": "GEForce RTX 3080",
-      "price": "1000",
-      "stock": "5",
-      "id": 5
+      "id": 4,
+      "name": "GEForce RTX 3090",
+      "price": 1500,
+      "stock": 40
     }
   ]
 }
