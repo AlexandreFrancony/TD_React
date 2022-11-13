@@ -38,7 +38,7 @@ const EditGpu = ({ getGpu, editedGpu, setEditedGpu }) => {
 				onChange={(e) => setEditedGpu({ ...editedGpu, stock: e.target.value })}
 			/>
 			<button className="btn-submit" type="submit">
-				"Save GPU"
+				Save GPU
 			</button>
 		</form>
 	)
