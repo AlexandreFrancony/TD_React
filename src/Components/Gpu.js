@@ -6,15 +6,15 @@ export function Gpu({ getGpu, gpu, setEditedGpu }) {
 	}
 
 	return (
-		<tr>
+		<tr className="tabBody">
 			<td>{gpu.id}</td>
 			<td>{gpu.name}</td>
 			<td>{gpu.price} €</td>
 			<td>{gpu.stock}</td>
 			<td>
 				<div className="btn">
-					<button onClick={() => setEditedGpu(gpu)}>Edit</button>
-					<button onClick={deleteGpu}>Delete</button>
+					<button className="editButton" onClick={() => setEditedGpu(gpu)}>Edit</button>
+					<button className="deleteButton" onClick={deleteGpu}>Delete</button>
 				</div>
 			</td>
 		</tr>

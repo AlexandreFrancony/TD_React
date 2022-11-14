@@ -3,9 +3,9 @@ import { Gpu } from "./Gpu"
 const ReadGpu = ({ getGpu, gpus, setEditedGpu }) => {
 	return (
 		<>
-			<table>
-				<thead>
-					<tr>
+			<table className="tabRead">
+				<thead className="theadRead">
+					<tr className="headRow">
 						<th>ID</th>
 						<th>Name</th>
 						<th>Price</th>

@@ -27,16 +27,16 @@ function App() {
 				{" "}
 				<strong>GPU Market</strong>{" "}
 			</h1>
-			<div className="boxes">
-				<h3>Ajouter une GPU</h3>
+			<div className="formBox">
+				<h3>Add a GPU</h3>
 				<FormGpu getGpu={getGpu} />
 			</div>
-			<div className="boxes">
-				<h3>Affichage de tout les GPUs</h3>
+			<div className="readBox">
+				<h3>Display of all the GPUs</h3>
 				<ReadGpu getGpu={getGpu} gpus={gpus} setEditedGpu={setEditedGpu} />
 			</div>
 			{editedGpu && (
-				<div className="boxes">
+				<div className="formBox">
 					<h3>Editer GPU</h3>
 					<EditGpu
 						getGpu={getGpu}

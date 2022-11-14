@@ -7,42 +7,138 @@ html, body {
 
 body{
   height: max-content;
-  background: linear-gradient(to bottom right,blue, pink);
+  background: linear-gradient(to bottom, rgba(255,128,255,0.5), rgba(0,0,128,0.5));
+  background-attachment: fixed;
+  font-family: OCR A Std, monospace	;
+  padding-bottom: 0.5%;
+}
+
+h1{
+  font-family: Stencil Std, fantasy;
+  letter-spacing: 1px;
+}
+
+h3{
+padding-top: 10px;
+font-size: 25px;
+
 }
 
 .total{
   height: 100%;
-  font-family: Verdana, sans-serif; 
   font-size: 100%;
   text-align: center;
 }
 
-.boxes{
+.formBox{
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
   margin-left: 30%;
   margin-right: 30%;
   padding-bottom: 1%;
   border-radius: 10px;
-  background: linear-gradient(to top left,blue, pink);
+  background: linear-gradient(to top left,#426bff, #f890c3);
 }
 
-table{
-  margin: 0 auto;
-  background-color: rgb(100, 172, 255);
-  }
+input{
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
 
-td{
-  background-color: rgb(128, 255, 206);
-  padding: 5px;
+input:focus{
+  background-color: #c5c6ff;
+  outline: 3px solid #555;
+}
+
+.readBox{
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 2%;
+  padding-bottom: 1px;
+  border-radius: 10px;
+  background: linear-gradient(to top left,#1e4fff, #f890c3);
+}
+
+table.tabRead{
+  width: 98%;
+  border-radius: 10px;
+  margin: 1%;
+  border-collapse: collapse;
+  background-color: #333;
+  color: grey;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+thead.theadRead{
+  color: #fff;
+}
+
+/* ?Unsure if this is needed
+   TODO : Edit if tr needs CSS
+tr.headRow{
+}*/
+
+tr.tabBody:hover{
+  color:bisque;
 }
 
 th{
-    border: 1px solid #333;
-    padding: 5px;
-    
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-thead{
-    background-color: #333;
-    color: #fff;  
+td{
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+button{
+  border : none;
+  border-radius: 2px;
+  text-align: center;
+  padding: 5px 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+  transition-duration: 0.4s;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.addButton{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.addButton:hover{
+  background-color: #4CAF50;
+  color: white;
+}
+
+.editButton{
+  background-color: white; 
+  color: black; 
+  border: 2px solid gold;
+}
+
+.editButton:hover{
+  background-color: gold;
+  color: white;
+}
+
+.deleteButton{
+  background-color: white; 
+  color: black; 
+  border: 2px solid red;
+}
+
+.deleteButton:hover{
+  background-color: red;
+  color: white;
 }

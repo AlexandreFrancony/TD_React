@@ -39,7 +39,7 @@ const FormGpu = ({ getGpu }) => {
 				placeholder="Stock"
 				onChange={(e) => setGpu({ ...gpu, stock: e.target.value })}
 			/>
-			<button className="btn-submit" type="submit">
+			<button className="addButton" type="submit">
 				{!gpu.id ? "Add new GPU" : "Save GPU"}
 			</button>
 		</form>
